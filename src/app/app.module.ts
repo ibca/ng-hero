@@ -14,6 +14,7 @@ import {HeroDetialComponent} from './hero-detial/hero-detial.component';
 import {HeroesComponent} from './heroes/heroes.component';
 import {MessagesComponent} from './messages/messages.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HeroDetialComponent,
     MessagesComponent,
     HeroSearchComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
@@ -37,4 +39,5 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
   bootstrap: [AppComponent]
 })
 export class AppModule {
+  color: string;
 }
